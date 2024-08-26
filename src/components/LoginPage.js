@@ -1,12 +1,11 @@
 import { Box, Button, Container, Link, Typography } from "@mui/material";
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import google from "../assets/google.svg";
 import { useAuth } from "../context/Authcontext";
 
 const LoginPage = () => {
   const { loginWithGoogle } = useAuth();
-  const navigate = useNavigate();
+  
 
   const handleGoogleLogin = async () => {
     await loginWithGoogle();

@@ -1,10 +1,10 @@
 import {
-    Box,
-    List,
-    ListItem,
-    ListItemText,
-    TextField,
-    Typography,
+  Box,
+  List,
+  ListItem,
+  ListItemText,
+  TextField,
+  Typography,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { format } from "date-fns";
@@ -16,7 +16,7 @@ import EmailDetails from "./EmailDetails";
 import SideDetails from "./SideDetails";
 
 const EmailList = () => {
-  const { emails, fetchEmailDetail, selectedEmails, error } =
+  const { emails, fetchEmailDetail, selectedEmails} =
     useContext(EmailContext);
   const theme = useTheme(); // Access the current theme
 
@@ -188,10 +188,6 @@ const EmailList = () => {
       </Box>
 
       <SideDetails />
-      {/* 
-      {error && (
-        <Box sx={{ color: theme.palette.error.main, m: 2 }}>{error}</Box>
-      )} */}
     </Box>
   );
 };

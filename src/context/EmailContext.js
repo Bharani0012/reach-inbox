@@ -103,6 +103,7 @@ export const EmailProvider = ({ children }) => {
     useEffect(() => {
         window.addEventListener("keydown", handleKeyDown);
         return () => window.removeEventListener("keydown", handleKeyDown);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedEmails]);
 
     const sendReply = async (threadId, replyBody) => {

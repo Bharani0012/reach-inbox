@@ -7,7 +7,6 @@ import ReplySection from "./ReplySection";
 
 const EmailDetails = ({ emails }) => {
     const {
-        deleteEmail,
         replying,
         setReplying,
         selectedEmails,
@@ -16,7 +15,6 @@ const EmailDetails = ({ emails }) => {
         handleConfirmDelete,
         deleteModalOpen,
         setDeleteModalOpen,
-        emailToDelete,
         setEmailToDelete,
     } = useContext(EmailContext);
 

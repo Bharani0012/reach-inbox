@@ -1,10 +1,10 @@
 import {
-    Box,
-    Button,
-    Menu,
-    MenuItem,
-    Typography,
-    useTheme,
+  Box,
+  Button,
+  Menu,
+  MenuItem,
+  Typography,
+  useTheme,
 } from "@mui/material";
 import React, { useContext, useState } from "react";
 import cross from "../assets/cross.svg";
@@ -16,7 +16,7 @@ const ReplySection = ({ emailArray = [], threadId, onClose }) => {
   console.log(email);
   const [replyBody, setReplyBody] = useState("");
   const [anchorEl, setAnchorEl] = useState(null);
-  const { sendReply, replying } = useContext(EmailContext);
+  const { sendReply } = useContext(EmailContext);
 
   const theme = useTheme();
 
